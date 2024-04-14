@@ -2,7 +2,7 @@
 # https://github.com/TinyTapeout/tt-support-tools/blob/tt06/def/analog/tt_block_1x2_pg_ana.def
 
 def read tt_block_1x2_pg_ana.def
-cellname rename tt_um_template tt_um_analog_example
+cellname rename tt_um_template tt_um_rejunity_current_cmp
 
 # VPWR
 box 100 500 250 22076
@@ -23,6 +23,6 @@ port VGND class bidirectional
 port conn n s e w
 
 # Export
-gds write gds/tt_um_analog_example.gds
-lef write lef/tt_um_analog_example.lef -pinonly
+gds write ../gds/tt_um_rejunity_current_cmp.gds
+lef write ../lef/tt_um_rejunity_current_cmp.lef -pinonly
 
