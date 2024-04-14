@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A current comparator that compares 2 currents each formed by a sum of 8 digital pins.
 
 ## How to test
 
-Explain how to use your project
+Set the 8 inputs to form current A and 8 bi-directional inputs to form current B.
+The ouptut analog voltage is the result of the comparison operator (sigmoid).
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A multimeter to measure the output voltage on analog pin 0.
