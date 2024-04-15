@@ -1,5 +1,15 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
+# Setup
+
+* Setup python venv (for example name it `.sky130` with ```python3 -m venv .sky130```)
+* Activate python venv (```source .sky130/bin/activate```)
+* Install volare (```pip3 install volare```)
+* Install specific PDK version using volare (```volare enable --pdk sky130 3af133706e554a740cfe60f21e773d9eaa41838c```)
+* Add `PDK_ROOT` environment variable (add ```export PDK_ROOT=$(volare path)``` at the end of `.sky130/bin/activate` configuration file)
+
+NOTE: don't forget to activate python venv every time after reboot / restart (```source .sky130/bin/activate```).
+
 # Tiny Tapeout Analog Project Template
 
 - [Read the documentation for project](docs/info.md)
