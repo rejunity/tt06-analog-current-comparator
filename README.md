@@ -7,6 +7,7 @@
 * Install volare (```pip3 install volare```)
 * Install specific PDK version using volare (```volare enable --pdk sky130 3af133706e554a740cfe60f21e773d9eaa41838c```)
 * Add `PDK_ROOT` environment variable (add ```export PDK_ROOT=$(volare path)``` at the end of `.sky130/bin/activate` configuration file)
+* Install [magic](http://opencircuitdesign.com/magic/), [ngspice](https://ngspice.sourceforge.io)
 
 NOTE: don't forget to activate python venv every time after reboot / restart (```source .sky130/bin/activate```).
 
