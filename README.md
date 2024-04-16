@@ -34,8 +34,8 @@ NOTE: don't forget to activate python venv every time after reboot / restart (``
    * `:paint pc` contacts between Polysilicon and local metal interconnect. 
    * `:paint li` local metal interconnect, goes over polysilicon, but below `metal1`. Local interconnect must be larger in **vertical** dimension than contacts to **diffusion** and in **horizontal** than **polysilicon** contacts below.
    * `:paint nsd` N-substrate tap
-   * `:paint nsc` power rail contact to N-substrate tap
-   * `:paint psd`, `:paint psc` ground to P-subtrate
+   * `:paint nsc` VPWR power rail contact to N-substrate tap
+   * `:paint psd`, `:paint psc` VGND ground to P-subtrate
    * `:label A` temporarily label input & output for early extraction
 
 # Draw an Owl
@@ -49,7 +49,8 @@ NOTE: don't forget to activate python venv every time after reboot / restart (``
 
 ## Plan
 * All unused pins must be tied to `VGND`
-* Route `VPWR` to `metal3`
+* Route `VPWR` to `metal3` via `via3`
+* To connect to `li` from `metal4` need: `via3`, `metal3`, `via2`, `metal2`, `via1`, `metal1`, `viali`
 
 # Other Useful Links 
 * https://xschem-viewer.com
