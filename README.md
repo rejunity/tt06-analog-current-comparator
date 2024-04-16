@@ -28,15 +28,17 @@ NOTE: don't forget to activate python venv every time after reboot / restart (``
 * [Official tutorial](https://terpconnect.umd.edu/~newcomb/vlsi/magic_tut/Magic_x3.pdf)
 * [Cheatsheet](https://github.com/iic-jku/osic-multitool/blob/main/magic-cheatsheet/magic_cheatsheet.pdf)
 * [A Step-by-Step Example: Layout of a CMOS Inverter Using SkyWater 130nm Process](https://docs.google.com/document/d/1hSLKsz9xcEJgAMmYYer5cDwvPqas9_JGRUAgEORx1Yw/edit#heading=h.j6gtadx04fb6)
-   * `:paint poly` Polysilicon (sx:0.15)
-   * `:paint pdiff` (nwell ?) P-diffusion (sx:0.68 sy:1.0)
-   * `:paint ndiff` N-diffusion (sx:0.68 sy:0.42) PMOS = NMOS x **2.38**
-   * `:paint ndc`, `:paint pdc` contacts between N-diffusion / P-diffusion and local metal interconnect. Diffusion underneath must be larger than contacts.
-   * `:paint pc` contacts between Polysilicon and local metal interconnect. 
-   * `:paint li` local metal interconnect, goes over polysilicon, but below `metal1`. Local interconnect must be larger in **vertical** dimension than contacts to **diffusion** and in **horizontal** than **polysilicon** contacts below.
-   * `:paint nsd` N-substrate tap
-   * `:paint nsc` VPWR power rail contact to N-substrate tap
-   * `:paint psd`, `:paint psc` VGND ground to P-subtrate
+   * `grid 0.05u 0.05u` and `snap lambda`
+   * `:paint poly` Polysilicon (w:0.15, h:>22.0)
+   * `:paint pdiff` P-diffusion (h:1.0)
+   * `:paint nwell` (h:~20.0)
+   * `:paint ndiff` N-diffusion (h:0.42) PMOS = NMOS x **2.38**
+   * `:paint ndc`, `:paint pdc` contacts between N-diffusion / P-diffusion and local metal interconnect. Diffusion underneath must be larger than contacts (w:0.2).
+   * `:paint pc` contacts between Polysilicon and local metal interconnect (w:0.2 h:0.2).
+   * `:paint li` local metal interconnect, goes over polysilicon, but below `metal1`. Local interconnect must be larger (±w:0.1) in **vertical** dimension than contacts to **diffusion** and (±h:0.1) in **horizontal** than **polysilicon** contacts below. Power rails must be twice the size local interonnect lines (h:0.4)
+   * `:paint nsd` N-substrate tap (w:0.5 h:0.2)
+   * `:paint nsc` VPWR power rail contact (w:0.2 h:0.2) to N-substrate tap.
+   * `:paint psd`, `:paint psc` VGND ground to P-subtrate, tap (w:0.5 h:0.2)
    * `:label A` temporarily label input & output for early extraction
 
 # Draw an Owl
@@ -45,7 +47,7 @@ NOTE: don't forget to activate python venv every time after reboot / restart (``
 * All connections (pins) including power, ground, digital and analog outputs are `metal4`.
 * Digital input/outputs are on the **top** from left to right: `uio_oe[7..0]`, `uio_out[..]`, `uo_out[..]`, `uio_in[..]`, `ui_in[..]`, `rst_n`, `clk`, `ena`
 * `VPWR` is the leftmost, `VGND` is roughly below and between `uio_out[3]` and `uio_out[2]`
-* Analog outputs are at the **bottom** from left to right: `ua[7..0]`
+* Analog pins are at the **bottom** from left to right: `ua[7..0]`
 * sky 130 https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html
 
 ## Plan
