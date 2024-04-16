@@ -10,6 +10,21 @@
 * Install [magic](http://opencircuitdesign.com/magic/), [ngspice](https://ngspice.sourceforge.io)
 
 NOTE: don't forget to activate python venv every time after reboot / restart (```source .sky130/bin/activate```).
+* Open design ```magic -rcfile $PDK_ROOT/sky130A/libs.tech/magic/sky130A.magicrc mag/current_cmp.mag```
+
+# Useful Magic commands
+* ```what```
+* ```show``` dimensions of the selected node (the same as `b` key)
+* ```copy right 300``` copies the selected node by 300um right
+
+# Drawing
+
+* All connections (pins) including power, ground, digital and analog outputs are `metal4`.
+* Digital input/outputs are on the **top** from left to right: `uio_oe[7..0]`, `uio_out[..]`, `uo_out[..]`, `uio_in[..]`, `ui_in[..]`, `rst_n`, `clk`, `ena`
+* `VPWR` is the leftmost, `VGND` is roughly below and between `uio_out[3]` and `uio_out[2]`
+* Analog outputs are at the **bottom** from left to right: `ua[7..0]`
+* All unused pins must be tied to `VGND`
+* sky 130 https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html
 
 # Tiny Tapeout Analog Project Template
 
