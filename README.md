@@ -55,6 +55,9 @@ NOTE: don't forget to activate python venv every time after reboot / restart (``
 * Route `VPWR` to `metal3` via `via3`
 * To connect to `li` from `metal4` need: `via3`, `metal3`, `via2`, `metal2`, `via1`, `metal1`, `viali`
 
+Layers that can be used in TinyTapeout06 analog designs:
+![](docs/sky130_layers.png)
+
 # Other Useful Links 
 * https://xschem-viewer.com
   
