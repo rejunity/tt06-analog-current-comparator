@@ -1,0 +1,130 @@
+* NGSPICE file created from tt_um_rejunity_current_cmp.ext - technology: sky130A
+
+ clk ena rst_n ua[0] ua[1] ua[2] ua[3] ua[4] ua[5]
++ ua[6] ua[7] ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7]
++ uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7]
++ uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7]
++ uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7]
++ uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7]
++ VPWR VGND
+X0 Y A VGND VGND sky130_fd_pr__nfet_01v8 ad=0.189 pd=1.74 as=0.168 ps=1.64 w=0.42 l=0.15
+X1 Y A VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.4 ps=2.8 w=1 l=0.15
+C0 uio_oe[5] uio_oe[4] 0.023797f
+C1 VPWR uio_oe[1] 0.003534f
+C2 ui_in[2] ui_in[1] 0.023797f
+C3 VPWR uio_oe[2] 0.003534f
+C4 uio_oe[6] uio_oe[5] 0.023797f
+C5 VPWR uio_oe[3] 0.003534f
+C6 ui_in[3] ui_in[2] 0.023797f
+C7 VPWR uio_oe[4] 0.003534f
+C8 uio_oe[7] uio_oe[6] 0.023797f
+C9 VPWR uio_oe[5] 0.003534f
+C10 ui_in[4] ui_in[3] 0.023797f
+C11 VPWR uio_oe[6] 0.003534f
+C12 VPWR uio_oe[7] 0.003534f
+C13 ui_in[5] ui_in[4] 0.023797f
+C14 ui_in[6] ui_in[5] 0.023797f
+C15 m3_201_22427# VPWR 0.40909f
+C16 Y VPWR 0.098215f
+C17 ui_in[7] ui_in[6] 0.023797f
+C18 A VPWR 0.048717f
+C19 uio_in[0] ui_in[7] 0.023797f
+C20 A Y 0.036438f
+C21 uio_in[1] uio_in[0] 0.023797f
+C22 uio_in[2] uio_in[1] 0.023797f
+C23 uio_in[3] uio_in[2] 0.023797f
+C24 uio_in[4] uio_in[3] 0.023797f
+C25 uio_in[5] uio_in[4] 0.023797f
+C26 uio_in[6] uio_in[5] 0.023797f
+C27 uio_in[7] uio_in[6] 0.023797f
+C28 uo_out[0] uio_in[7] 0.023797f
+C29 uo_out[1] uo_out[0] 0.023797f
+C30 uo_out[2] uo_out[1] 0.023797f
+C31 VPWR ua[7] 0.010285f
+C32 uo_out[3] uo_out[2] 0.023797f
+C33 uo_out[4] uo_out[3] 0.023797f
+C34 uo_out[5] uo_out[4] 0.023797f
+C35 uo_out[6] uo_out[5] 0.023797f
+C36 uo_out[7] uo_out[6] 0.023797f
+C37 uio_out[0] uo_out[7] 0.023797f
+C38 uio_out[1] uio_out[0] 0.023797f
+C39 uio_out[2] uio_out[1] 0.023797f
+C40 uio_out[3] uio_out[2] 0.023797f
+C41 uio_out[4] uio_out[3] 0.023797f
+C42 uio_out[5] uio_out[4] 0.023797f
+C43 uio_out[6] uio_out[5] 0.023797f
+C44 uio_out[7] uio_out[6] 0.023797f
+C45 uio_oe[0] uio_out[7] 0.023797f
+C46 uio_oe[1] uio_oe[0] 0.023797f
+C47 VPWR uio_out[1] 6.13e-20
+C48 clk ena 0.023797f
+C49 VPWR uio_out[2] 1.27e-19
+C50 uio_oe[2] uio_oe[1] 0.023797f
+C51 VPWR uio_out[3] 1.27e-19
+C52 rst_n clk 0.023797f
+C53 VPWR uio_out[4] 0.003579f
+C54 uio_oe[3] uio_oe[2] 0.023797f
+C55 VPWR uio_out[5] 0.003534f
+C56 ui_in[0] rst_n 0.023797f
+C57 VPWR uio_out[6] 0.003534f
+C58 uio_oe[4] uio_oe[3] 0.023797f
+C59 VPWR uio_out[7] 0.003534f
+C60 ui_in[1] ui_in[0] 0.023797f
+C61 VPWR uio_oe[0] 0.003534f
+C62 ua[0] VGND 0.122428f
+C63 ua[1] VGND 0.122428f
+C64 ua[2] VGND 0.122428f
+C65 ua[3] VGND 0.122428f
+C66 ua[4] VGND 0.122428f
+C67 ua[5] VGND 0.122428f
+C68 ua[6] VGND 0.122428f
+C69 ua[7] VGND 0.111009f
+C70 ena VGND 0.073297f
+C71 clk VGND 0.0487f
+C72 rst_n VGND 0.0487f
+C73 ui_in[0] VGND 0.0487f
+C74 ui_in[1] VGND 0.0487f
+C75 ui_in[2] VGND 0.0487f
+C76 ui_in[3] VGND 0.0487f
+C77 ui_in[4] VGND 0.0487f
+C78 ui_in[5] VGND 0.0487f
+C79 ui_in[6] VGND 0.0487f
+C80 ui_in[7] VGND 0.0487f
+C81 uio_in[0] VGND 0.0487f
+C82 uio_in[1] VGND 0.0487f
+C83 uio_in[2] VGND 0.0487f
+C84 uio_in[3] VGND 0.0487f
+C85 uio_in[4] VGND 0.0487f
+C86 uio_in[5] VGND 0.0487f
+C87 uio_in[6] VGND 0.0487f
+C88 uio_in[7] VGND 0.0487f
+C89 uo_out[0] VGND 0.0487f
+C90 uo_out[1] VGND 0.0487f
+C91 uo_out[2] VGND 0.0487f
+C92 uo_out[3] VGND 0.0487f
+C93 uo_out[4] VGND 0.0487f
+C94 uo_out[5] VGND 0.0487f
+C95 uo_out[6] VGND 0.0487f
+C96 uo_out[7] VGND 0.0487f
+C97 uio_out[0] VGND 0.0487f
+C98 uio_out[1] VGND 0.048649f
+C99 uio_out[2] VGND 0.04844f
+C100 uio_out[3] VGND 0.04844f
+C101 uio_out[4] VGND 0.043967f
+C102 uio_out[5] VGND 0.043967f
+C103 uio_out[6] VGND 0.043967f
+C104 uio_out[7] VGND 0.043967f
+C105 uio_oe[0] VGND 0.043967f
+C106 uio_oe[1] VGND 0.043967f
+C107 uio_oe[2] VGND 0.043967f
+C108 uio_oe[3] VGND 0.043967f
+C109 uio_oe[4] VGND 0.043967f
+C110 uio_oe[5] VGND 0.043967f
+C111 uio_oe[6] VGND 0.043967f
+C112 uio_oe[7] VGND 0.068564f
+C113 VPWR VGND 24.929401f
+C114 m3_201_22427# VGND 4.47465f $ **FLOATING
+C115 Y VGND 0.185356f
+C116 A VGND 0.301948f
+
+

@@ -1,0 +1,9 @@
+Current Comparator Simulation
+* this file edited to remove everything not in tt lib
+* .lib "./sky130_fd_pr/models/sky130.lib.spice" tt
+.lib "/Users/rej/.volare/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+* instantiate the Current Comparator
+Xinv Y A VGND VPWR tt_um_rejunity_current_cmp
+
+.subckt tt_um_rejunity_current_cmp Y A VGND VPWR

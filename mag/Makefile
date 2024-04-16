@@ -20,40 +20,52 @@ $(PROJECT_NAME).lvs.spice: $(PROJECT_NAME).mag
 drc:
 	magic -noconsole -dnull drc.tcl $(PROJECT_NAME)
 	
-$(PROJECT_NAME).sim.spice: $(PROJECT_NAME).mag
-	magic -noconsole -dnull extract_for_sim.tcl $(PROJECT_NAME)
+$(PROJECT_NAME).spice: $(PROJECT_NAME).mag
+	# magic -noconsole -dnull extract_for_sim.tcl $(PROJECT_NAME)
+	magic -noconsole -dnull extract.tcl $(PROJECT_NAME)
 	rm -f *.ext
+
+$(PROJECT_NAME).sim.spice: pre.spice $(PROJECT_NAME).spice post.spice
+	# magic puts subckt and end around extract, so remove it
+	sed -i -e 's/.ends//' $(PROJECT_NAME).spice
+	sed -i -e 's/.subckt tt_um_rejunity_current_cmp//' $(PROJECT_NAME).spice
+	# build a simulation with pre and post.spice
+	cat $^ > $@
 
 lvs.report: $(PROJECT_NAME).lvs.spice ../src/project.v
 	netgen -batch eval "set project $(PROJECT_NAME) ; source lvs_netgen.tcl"
 
 lvs: lvs.report
 	@propOk=1; match=0; port=1; \
-    if grep -q "match uniquely" lvs.report; then \
-        match=1; \
-    fi; \
-    if grep -q "Property errors were found" lvs.report; then \
-        propOk=0; \
-    fi; \
-    if grep -q "failed pin matching" lvs.report; then \
-        match=0; \
-    fi; \
-    if grep -q "Final result: Netlists do not match" lvs.report; then \
-        match=0; \
-    fi; \
-    if grep -q "port errors" lvs.report; then \
-        port=0; \
-    fi; \
-    if grep -q "Final result: Circuits match uniquely\." lvs.report; then \
-        match=1; \
-    fi; \
+	if grep -q "match uniquely" lvs.report; then \
+		match=1; \
+	fi; \
+	if grep -q "Property errors were found" lvs.report; then \
+		propOk=0; \
+	fi; \
+	if grep -q "failed pin matching" lvs.report; then \
+		match=0; \
+	fi; \
+	if grep -q "Final result: Netlists do not match" lvs.report; then \
+		match=0; \
+	fi; \
+	if grep -q "port errors" lvs.report; then \
+		port=0; \
+	fi; \
+	if grep -q "Final result: Circuits match uniquely\." lvs.report; then \
+		match=1; \
+	fi; \
 	if [ $$match -eq 1 ] && [ $$propOk -eq 1 ] && [ $$port -eq 1 ]; then \
-        echo "LVS OK"; \
-	    exit 0; \
-    else \
-        echo "LVS FAIL: match=$$match properties=$$propOk port=$$port"; \
-	    exit 1; \
-    fi
+		echo "LVS OK"; \
+		exit 0; \
+	else \
+		echo "LVS FAIL: match=$$match properties=$$propOk port=$$port"; \
+		exit 1; \
+	fi
+
+sim: $(PROJECT_NAME).sim.spice
+	# run the simulation
+	ngspice $^
 
 update_gds:
 	mkdir -p ../gds ../lef
