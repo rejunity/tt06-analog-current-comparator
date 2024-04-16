@@ -9,7 +9,8 @@ Also Matt's old inverter: https://github.com/mattvenn/magic-inverter
 * Install volare (```pip3 install volare```)
 * Install specific PDK version using volare (```volare enable --pdk sky130 3af133706e554a740cfe60f21e773d9eaa41838c```)
 * Add `PDK_ROOT` environment variable (add ```export PDK_ROOT=$(volare path)``` at the end of `.sky130/bin/activate` configuration file)
-* Install [magic](http://opencircuitdesign.com/magic/), [ngspice](https://ngspice.sourceforge.io)
+* Install [magic](http://opencircuitdesign.com/magic/), [ngspice](https://ngspice.sourceforge.io), [netgen](https://github.com/RTimothyEdwards/netgen), [xschem](https://github.com/StefanSchippers/xschem)
+   * Very helpful [MacOS installation guide](http://web02.gonzaga.edu/faculty/talarico/vlsi/CADToolsOnMac.html) by [Claudio Talarico](https://github.com/claudiotalarico)
 * Download `tt_block_1x2_pg_ana.def` from https://raw.githubusercontent.com/TinyTapeout/tt-support-tools/tt06/def/analog/tt_block_1x2_pg_ana.def
 * Download `tt-analog-draw.tcl` from ...
 * Create project and TT06 scaffolding ```magic -rcfile $PDK_ROOT/sky130A/libs.tech/magic/sky130A.magicrc -noconsole -dnull mag/tt-analog-draw.tcl mag/current_cmp.mag```
