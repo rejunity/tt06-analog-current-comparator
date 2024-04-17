@@ -53,7 +53,7 @@ pinout:
   # Keep only the "ua" pins you are actually using, and *delete* any unused "ua" pins.
   # The first pins is always ua[0], and the pin numbers must be sequential.
   ua[0]: "Comparator output"
-  ua[1]: ""
+  ua[1]: "Comparator input"
 
 # Do not change!
 yaml_version: 6

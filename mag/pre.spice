@@ -6,4 +6,4 @@ Current Comparator Simulation
 * instantiate the Current Comparator
 Xinv Y A VGND VPWR tt_um_rejunity_current_cmp
 
-.subckt tt_um_rejunity_current_cmp Y A VGND VPWR
+.subckt tt_um_rejunity_current_cmp ua[0] ua[1] VGND VPWR
