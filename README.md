@@ -3,6 +3,10 @@
 Example Matt's DAC: https://github.com/mattvenn/tt06-analog-r2r-dac
 Also Matt's old inverter: https://github.com/mattvenn/magic-inverter
 
+# Simulation results
+![](docs/io_v2.svg)
+![](docs/ivdd_v2.svg)
+
 # Setup
 * Setup python venv (for example name it `.sky130` with ```python3 -m venv .sky130```)
 * Activate python venv (```source .sky130/bin/activate```)
