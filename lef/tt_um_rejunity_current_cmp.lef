@@ -34,6 +34,8 @@ MACRO tt_um_rejunity_current_cmp
   PIN ua[0]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.213000 ;
+    ANTENNADIFFAREA 0.639000 ;
     PORT
       LAYER met4 ;
         RECT 156.560 0.000 157.160 1.000 ;
@@ -42,6 +44,8 @@ MACRO tt_um_rejunity_current_cmp
   PIN ua[1]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.213000 ;
+    ANTENNADIFFAREA 0.568000 ;
     PORT
       LAYER met4 ;
         RECT 134.480 0.000 135.080 1.000 ;
@@ -226,6 +230,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_oe[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 29.750 224.760 30.050 225.760 ;
@@ -234,6 +239,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_oe[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 26.070 224.760 26.370 225.760 ;
@@ -242,6 +248,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_oe[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 22.390 224.760 22.690 225.760 ;
@@ -250,6 +257,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_oe[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 18.710 224.760 19.010 225.760 ;
@@ -258,6 +266,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_oe[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 15.030 224.760 15.330 225.760 ;
@@ -266,6 +275,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_oe[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 11.350 224.760 11.650 225.760 ;
@@ -274,6 +284,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_oe[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 7.670 224.760 7.970 225.760 ;
@@ -282,6 +293,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_oe[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 3.990 224.760 4.290 225.760 ;
@@ -290,6 +302,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 59.190 224.760 59.490 225.760 ;
@@ -298,6 +311,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 55.510 224.760 55.810 225.760 ;
@@ -306,6 +320,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 51.830 224.760 52.130 225.760 ;
@@ -314,6 +329,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 48.150 224.760 48.450 225.760 ;
@@ -322,6 +338,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 44.470 224.760 44.770 225.760 ;
@@ -330,6 +347,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 40.790 224.760 41.090 225.760 ;
@@ -338,6 +356,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 37.110 224.760 37.410 225.760 ;
@@ -346,6 +365,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 33.430 224.760 33.730 225.760 ;
@@ -354,6 +374,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 88.630 224.760 88.930 225.760 ;
@@ -362,6 +383,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uo_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 84.950 224.760 85.250 225.760 ;
@@ -370,6 +392,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 81.270 224.760 81.570 225.760 ;
@@ -378,6 +401,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 77.590 224.760 77.890 225.760 ;
@@ -386,6 +410,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 73.910 224.760 74.210 225.760 ;
@@ -394,6 +419,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 70.230 224.760 70.530 225.760 ;
@@ -402,6 +428,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 66.550 224.760 66.850 225.760 ;
@@ -410,6 +437,7 @@ MACRO tt_um_rejunity_current_cmp
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.368000 ;
     PORT
       LAYER met4 ;
         RECT 62.870 224.760 63.170 225.760 ;
@@ -433,29 +461,76 @@ MACRO tt_um_rejunity_current_cmp
   END VGND
   OBS
       LAYER nwell ;
-        RECT 56.200 214.800 58.000 216.750 ;
+        RECT 64.350 214.850 68.000 216.750 ;
       LAYER li1 ;
-        RECT 55.000 216.250 57.750 216.650 ;
-        RECT 56.600 215.000 56.900 216.250 ;
-        RECT 57.250 214.550 57.550 216.000 ;
-        RECT 56.250 214.350 57.000 214.550 ;
-        RECT 57.250 214.350 57.750 214.550 ;
-        RECT 56.600 213.350 56.900 214.000 ;
-        RECT 57.250 213.600 57.550 214.350 ;
-        RECT 55.050 212.950 57.750 213.350 ;
+        RECT 55.000 216.250 67.750 216.650 ;
+        RECT 64.650 213.350 64.850 216.050 ;
+        RECT 65.050 213.550 65.250 216.250 ;
+        RECT 65.600 214.800 65.800 216.050 ;
+        RECT 66.600 215.050 66.900 216.250 ;
+        RECT 65.600 214.600 67.000 214.800 ;
+        RECT 67.250 214.600 67.550 216.050 ;
+        RECT 69.050 214.600 69.300 215.450 ;
+        RECT 65.600 213.550 65.800 214.600 ;
+        RECT 67.250 214.400 69.300 214.600 ;
+        RECT 66.000 214.200 67.550 214.400 ;
+        RECT 66.600 213.350 66.900 213.950 ;
+        RECT 67.250 213.550 67.550 214.200 ;
+        RECT 55.050 212.950 67.750 213.350 ;
       LAYER met1 ;
         RECT 53.700 215.950 55.700 216.950 ;
+        RECT 68.850 215.000 70.050 215.600 ;
         RECT 53.700 212.600 55.700 213.600 ;
+        RECT 65.950 212.400 66.350 214.900 ;
+        RECT 65.950 211.800 70.050 212.400 ;
       LAYER met2 ;
         RECT 52.700 215.950 54.700 216.950 ;
+        RECT 69.450 215.000 70.650 215.600 ;
         RECT 52.700 212.600 54.700 213.600 ;
+        RECT 69.450 211.800 70.650 212.400 ;
       LAYER met3 ;
         RECT 44.490 215.850 53.700 217.350 ;
+        RECT 70.050 215.000 71.250 215.600 ;
         RECT 51.700 212.600 53.700 213.600 ;
-        RECT 1.005 112.135 44.305 113.625 ;
+        RECT 70.050 211.800 71.250 212.400 ;
       LAYER met4 ;
+        RECT 3.990 222.450 4.290 224.760 ;
+        RECT 7.670 222.450 7.970 224.760 ;
+        RECT 11.350 222.450 11.650 224.760 ;
+        RECT 15.030 222.450 15.330 224.760 ;
+        RECT 18.710 222.450 19.010 224.760 ;
+        RECT 22.390 222.450 22.690 224.760 ;
+        RECT 26.070 222.450 26.370 224.760 ;
+        RECT 29.750 222.450 30.050 224.760 ;
+        RECT 33.430 222.450 33.730 224.760 ;
+        RECT 37.110 222.450 37.410 224.760 ;
+        RECT 40.790 222.450 41.090 224.760 ;
+        RECT 44.470 222.450 44.770 224.760 ;
+        RECT 48.150 222.450 48.450 224.760 ;
+        RECT 51.830 222.450 52.130 224.760 ;
+        RECT 55.510 222.450 55.810 224.760 ;
+        RECT 59.190 222.450 59.490 224.760 ;
+        RECT 62.870 222.450 63.170 224.760 ;
+        RECT 66.550 222.450 66.850 224.760 ;
+        RECT 70.230 222.450 70.530 224.760 ;
+        RECT 73.910 222.450 74.210 224.760 ;
+        RECT 77.590 222.450 77.890 224.760 ;
+        RECT 81.270 222.450 81.570 224.760 ;
+        RECT 84.950 222.450 85.250 224.760 ;
+        RECT 88.630 222.450 88.930 224.760 ;
+        RECT 3.990 222.150 88.950 222.450 ;
+        RECT 49.600 220.760 49.900 222.150 ;
         RECT 2.500 215.850 45.990 217.350 ;
+        RECT 70.650 215.560 71.300 215.600 ;
+        RECT 70.650 215.020 157.130 215.560 ;
+        RECT 70.650 215.000 71.300 215.020 ;
         RECT 50.500 212.490 52.700 213.990 ;
+        RECT 70.650 212.340 72.750 212.400 ;
+        RECT 70.650 211.800 135.080 212.340 ;
+        RECT 72.740 211.740 135.080 211.800 ;
+        RECT 134.480 1.000 135.080 211.740 ;
+        RECT 156.590 171.390 157.130 215.020 ;
+        RECT 156.595 1.000 157.125 171.390 ;
   END
 END tt_um_rejunity_current_cmp
 END LIBRARY
