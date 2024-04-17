@@ -1,11 +1,14 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
 Example Matt's DAC: https://github.com/mattvenn/tt06-analog-r2r-dac
+
 Also Matt's old inverter: https://github.com/mattvenn/magic-inverter
 
 # Simulation results
-![](docs/io_v2.svg)
-![](docs/ivdd_v2.svg)
+<p align="center">
+    <img width="45%" src="./docs/io_v2.svg">
+    <img width="45%" src="./docs/ivdd_v2.svg">
+</p>
 
 # Setup
 * Setup python venv (for example name it `.sky130` with ```python3 -m venv .sky130```)
