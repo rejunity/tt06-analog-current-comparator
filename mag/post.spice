@@ -24,18 +24,32 @@ Vdd VPWR VGND 1.8
 * pulse(0 1.8 20n 10p 10p 20n 40n)
 * pulse(0 1.8  1p 10p 10p 20n 40n)
 
-Vin0 X0 VGND pulse(1.8 0 20n 10p 10p 40n 80n)
-Vin1 X1 VGND pulse(1.8 0 40n 10p 10p 40n 80n)
-Vin2 Y0 VGND pulse(0 1.8  5n 10p 10p 10n 20n)
-Vin3 Y1 VGND pulse(0 1.8 10n 10p 10p 10n 20n)
-.tran 10e-12 6e-08 0e-00
+VinX0 X0 VGND pulse(1.8 0  20n 10p 10p 100n 160n)
+VinX1 X1 VGND pulse(1.8 0  40n 10p 10p 100n 160n)
+VinX2 X2 VGND pulse(1.8 0  60n 10p 10p 100n 160n)
+VinX3 X3 VGND pulse(1.8 0  80n 10p 10p 100n 160n)
+VinX4 X4 VGND pulse(1.8 0 100n 10p 10p 100n 160n)
+VinX5 X5 VGND 1.8
+VinX6 X6 VGND 1.8
+VinX7 X7 VGND 1.8
+
+VinY0 Y0 VGND pulse(0 1.8  5n 10p 10p 20n 40n)
+VinY1 Y1 VGND pulse(0 1.8 10n 10p 10p 20n 40n)
+VinY2 Y2 VGND pulse(0 1.8 15n 10p 10p 20n 40n)
+VinY3 Y3 VGND pulse(0 1.8 20n 10p 10p 20n 40n)
+VinY4 Y4 VGND 0
+VinY5 Y5 VGND 0
+VinY6 Y6 VGND 0
+VinY7 Y7 VGND 0
+
+.tran 10e-12 12e-08 0e-00
 
 .control
 run
 set color0 = white
 set color1 = black
-plot X0, X1
-plot Y0, Y1
+plot X0 X1 X2 X3 X4
+plot Y0 Y1 Y2 Y3
 plot Out
 plot i(Vdd)
 .endc
