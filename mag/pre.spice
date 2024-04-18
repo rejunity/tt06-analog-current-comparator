@@ -7,3 +7,4 @@ Current Comparator Simulation
 Xcmp Out X0 X1 X2 X3 X4 X5 X6 X7 Y0 Y1 Y2 Y3 Y4 Y5 Y6 Y7 VGND VPWR tt_um_rejunity_current_cmp
 
 .subckt tt_um_rejunity_current_cmp ua[0] uio_in[7] uio_in[6] uio_in[5] uio_in[4] uio_in[3] uio_in[2] uio_in[1] uio_in[0] ui_in[7] ui_in[6] ui_in[5] ui_in[4] ui_in[3] ui_in[2] ui_in[1] ui_in[0] VGND VPWR
+
