@@ -1,8 +1,8 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
-Example Matt's DAC: https://github.com/mattvenn/tt06-analog-r2r-dac
-
-Also Matt's old inverter: https://github.com/mattvenn/magic-inverter
+# Current comparator building block for analog neuron
+Digital inputs are used to shape a pair of Excitatory and Inhibitory currents. Resulting currents are summed via current mirrors and passed into current comparator that applies sigmoid non-linearity. In other words, if Excitatory current is larger than Inhibitory the ASIC will produce 1.8 Volt signal and 0 Volt otherwise.
+![](./docs/layout.png)
 
 # Simulation results
 <p align="center">
@@ -32,6 +32,8 @@ NOTE: don't forget to activate python venv every time after reboot / restart (``
 * ```copy right 300``` copies the selected node by 300um right
   
 ## Tutorials
+* Example Matt's DAC: https://github.com/mattvenn/tt06-analog-r2r-dac
+* Also Matt's old inverter: https://github.com/mattvenn/magic-inverter
 * [Official tutorial](https://terpconnect.umd.edu/~newcomb/vlsi/magic_tut/Magic_x3.pdf)
 * [Cheatsheet](https://github.com/iic-jku/osic-multitool/blob/main/magic-cheatsheet/magic_cheatsheet.pdf)
 * [A Step-by-Step Example: Layout of a CMOS Inverter Using SkyWater 130nm Process](https://docs.google.com/document/d/1hSLKsz9xcEJgAMmYYer5cDwvPqas9_JGRUAgEORx1Yw/edit#heading=h.j6gtadx04fb6)
