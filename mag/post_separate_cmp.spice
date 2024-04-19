@@ -1,0 +1,36 @@
+.ends
+
+* set gnd and power
+Vgnd VGND 0 0
+Vdd VPWR VGND 1.8
+
+VinX0 X0 VGND 0
+VinX1 X1 VGND 0
+VinX2 X2 VGND 0
+VinX3 X3 VGND 0
+VinX4 X4 VGND 0
+VinX5 X5 VGND 0
+VinX6 X6 VGND 0
+VinX7 X7 VGND 0 
+
+VinY1 Y1 VGND 1.8
+VinY2 Y2 VGND 1.8
+VinY3 Y3 VGND 1.8
+VinY4 Y4 VGND 1.8
+VinY5 Y5 VGND 1.8
+VinY6 Y6 VGND 1.8
+VinY7 Y7 VGND 1.8
+
+* Isource InCmp VGND pulse(-0.002a 0.002a 0 40n 40n 0 80n)
+Isource InCmp VGND SIN(0 0.0002a .02G 0 0)
+* Isource InCmp VGND SIN(0 0.0000002a .02G 0 0)
+.tran 10e-12 12e-08 0e-00
+
+.control
+run
+set color0 = white
+set color1 = black
+plot i(Vdd)
+plot InCmp
+plot OutCmp
+.endc
