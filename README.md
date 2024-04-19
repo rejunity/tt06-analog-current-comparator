@@ -3,7 +3,7 @@
 # Current comparator building block for analog neuron
 Digital inputs are used to shape a pair of Excitatory and Inhibitory currents. Resulting currents are summed via current mirrors and passed into current comparator that applies sigmoid non-linearity. In other words, if Excitatory current is larger than Inhibitory the ASIC will produce 1.8 Volt signal and 0 Volt otherwise.
 
-ASIC fabricated with [Tiny Tapeout 06](https://tinytapeout.com).
+The ASIC is fabricated with [Tiny Tapeout 06](https://tinytapeout.com) and Skywater 130 nm process.
 ![](./docs/layout.png)
 
 # Simulation results
